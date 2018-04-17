@@ -23,17 +23,15 @@ function submitForm(){
     var message = $("#msg").val();
  
     $.ajax({
+	    alert('form');
 	    
-        type: "POST",
-	    dataType:"json",
+        type: "POST",	 
         url: "process.php",
         data: "name=" + name + "&email=" + email + "&msg=" + message,
-        success : function(text){
-            if (text == "success"){
-                formSuccess();
-            }
+        success : function(data){
+            window.alert(data);
         }
-	    alert('form');
+	    
 	   
     });
 }
