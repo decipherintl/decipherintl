@@ -24,7 +24,7 @@ function submitForm(){
  
     $.ajax({
         type: "POST",
-        url: "http://decipherintl.com/process.php",
+        url: "https://decipherintl.github.io/decipherintl/process.php",
         data: "name=" + name + "&email=" + email + "&msg=" + message,
         success : function(text){
             if (text == "success"){
