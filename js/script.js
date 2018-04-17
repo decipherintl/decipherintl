@@ -82,7 +82,7 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function() {
+/*$(document).ready(function() {
     document.onkeydown = function(e){
         if (e.ctrlKey &&
             (e.keyCode === 67 ||
@@ -103,7 +103,7 @@ $(document).ready(function() {
                 return false;
             }
         });
-});
+});*/
 
 
         
