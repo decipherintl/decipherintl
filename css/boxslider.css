@@ -164,7 +164,7 @@ hr.star-light-slider:after {
 /********************************/
 /*          Media Queries       */
 /********************************/
-@media(max-width:800px)
+@media(max-device-width:800px)
 {
 .hero
 {
@@ -178,10 +178,10 @@ width: 95%;
     height: 350px;
 }
 }
-@media screen and (min-width: 980px){
+@media screen and (min-device-width: 980px){
     .hero { width: 980px; }    
 }
-@media screen and (max-width: 640px){
+@media screen and (max-device-width: 640px){
     .hero h1 { font-size: 4em; } 
 	.fade-carousel {
     position: relative;
