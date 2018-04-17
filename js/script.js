@@ -9,7 +9,7 @@ $(window).scroll(function() {
 });
 
 //contact form
-$("#contactForm").submit(function(event){
+/*$("#contactForm").submit(function(event){
     
     event.preventDefault();
     submitForm();
@@ -40,7 +40,7 @@ function formSuccess(){
     alert('not');
 	$("#contactForm")[0].reset();
     $( "#msgSubmit" ).removeClass( "hidden" );
-}
+}*/
 
 // Ripple-effect animation
 (function($) {
