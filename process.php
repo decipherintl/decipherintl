@@ -24,10 +24,10 @@ $success = mail($EmailTo, $Subject, $Body, "From:".$email);
  
 // redirect to success page
 if ($success){
-
-   echo "success";
-
-}else{
+echo "success";
+}
+else
+{
     echo "invalid";
 }
  
