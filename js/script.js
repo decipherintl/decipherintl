@@ -10,14 +10,14 @@ $(window).scroll(function() {
 
 //contact form
 $("#contactForm").submit(function(event){
-    // cancels the form submission
+    
     event.preventDefault();
     submitForm();
 });
 
 function submitForm(){
     alert('ok');
-    // Initiate Variables With Form Content
+    
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#msg").val();
