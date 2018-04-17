@@ -9,7 +9,7 @@ $(window).scroll(function() {
 });
 
 //contact form
-/*$("#contactForm").submit(function(event){
+$("#contactForm").submit(function(event){
     
     event.preventDefault();
     submitForm();
@@ -25,7 +25,7 @@ function submitForm(){
  
     $.ajax({
 	type: "POST",	 
-        url: "http://devndesign.online/decipher-solutions/process.php",
+        url: "process.php",
         data: "name=" + name + "&email=" + email + "&msg=" + message,
         success : function(text){
             if (text == "success"){
@@ -40,7 +40,7 @@ function formSuccess(){
     alert('not');
 	$("#contactForm")[0].reset();
     $( "#msgSubmit" ).removeClass( "hidden" );
-}*/
+}
 
 // Ripple-effect animation
 (function($) {
