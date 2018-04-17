@@ -17,7 +17,7 @@ $("#contactForm").submit(function(event){
 
 function submitForm(){
     alert('ok');
-    alert('check'+$("#name").val());
+    alert('check'+$("#email").val());
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#msg").val();
