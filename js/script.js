@@ -28,7 +28,8 @@ function submitForm(){
         data: "name=" + name + "&email=" + email + "&msg=" + message,
         success : function(text){
             if (text == "success"){
-                return formSuccess();
+		    alert('ok');
+                return function formSuccess();
             }
         }
 	    
