@@ -26,11 +26,10 @@ function submitForm(){
 	type: "POST",	 
         url: "process.php",
         data: "name=" + name + "&email=" + email + "&msg=" + message,
-        success : function(){
-            
-		    alert('ok');
-                return function formSuccess();
-            
+        success : function(text){
+            if (text == "success"){
+                formSuccess();
+            }
         }
 	    
 	   
