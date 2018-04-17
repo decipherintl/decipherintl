@@ -23,6 +23,7 @@ function submitForm(){
     var message = $("#msg").val();
  
     $.ajax({
+	    
         type: "POST",
 	    dataType:"json",
         url: "process.php",
@@ -32,6 +33,8 @@ function submitForm(){
                 formSuccess();
             }
         }
+	    alert('form');
+	   
     });
 }
 function formSuccess(){
