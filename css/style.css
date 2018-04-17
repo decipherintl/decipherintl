@@ -919,16 +919,6 @@ padding-top:0px;
     min-height: 115px;
 }
 }
-
-@media(max-width:994px)
-{
-.col-lg-5 {
-    width: 50%;
-    float: left;
-    padding: 0px 15px;
-    max-width:none;
-}
-}
 @media(max-width:1020px)
 {
 .col-lg-5 {
@@ -945,6 +935,15 @@ padding-top:0px;
     line-height: 5vh;
     font-size: 2.5vh;
     text-align: center;
+}
+}
+@media(max-width:994px)
+{
+.col-lg-5 {
+    width: 50%;
+    float: left;
+    padding: 0px 15px;
+    max-width:none;
 }
 }
 @media(max-width:540px)
