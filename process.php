@@ -14,22 +14,20 @@ $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
- 
+
+
 $Body .= "Message: ";
 $Body .= $message;
 $Body .= "\n";
  
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$success = @mail($EmailTo, $Subject, $Body, "From:".$email);
  
 // redirect to success page
-if ($success){
-echo "success";
-}
-else
-{
+if (isset($success)){
+   echo "success";
+}else{
     echo "invalid";
 }
  
 ?>
-
