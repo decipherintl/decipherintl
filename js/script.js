@@ -17,11 +17,11 @@ $("#contactForm").submit(function(event){
 
 function submitForm(){
     alert('ok');
-    
+    alert('check'+$("#name").val());
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#msg").val();
-	alert(name);
+	
  
     $.ajax({
 	type: "POST",	 
