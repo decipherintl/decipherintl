@@ -24,7 +24,11 @@ $success = mail($EmailTo, $Subject, $Body, "From:".$email);
  
 // redirect to success page
 if ($success){
-   echo "success";
+ ?>
+   <script>
+    window.location.href = "http://decipherintl.com/";
+</script>
+<?php
 }else{
     echo "invalid";
 }
