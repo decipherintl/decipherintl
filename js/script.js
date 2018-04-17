@@ -28,13 +28,13 @@ function submitForm(){
         data: "name=" + name + "&email=" + email + "&msg=" + message,
         success : function(text){
             if (text == "success"){
-                //formSuccess();
-		    alert('ok');
+                formSuccess();
             }
         }
     });
 }
 function formSuccess(){
+    alert('not');
 	$("#contactForm")[0].reset();
     $( "#msgSubmit" ).removeClass( "hidden" );
 }
