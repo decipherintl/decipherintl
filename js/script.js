@@ -74,7 +74,7 @@ function formSuccess(){
 
 //ctrl u and rightclick close
 
-$(document).ready(function(){
+/*$(document).ready(function(){
  $(document).bind("contextmenu",function(e){
    return false;
  });
@@ -82,7 +82,7 @@ $(document).ready(function(){
 
 
 
-/*$(document).ready(function() {
+$(document).ready(function() {
     document.onkeydown = function(e){
         if (e.ctrlKey &&
             (e.keyCode === 67 ||
