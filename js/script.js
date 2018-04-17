@@ -24,6 +24,7 @@ function submitForm(){
  
     $.ajax({
         type: "POST",
+	    dataType:"json",
         url: "process.php",
         data: "name=" + name + "&email=" + email + "&msg=" + message,
         success : function(text){
