@@ -28,7 +28,7 @@ function submitForm(){
         data: "name=" + name + "&email=" + email + "&msg=" + message,
         success : function(text){
             if (text == "success"){
-                formSuccess();
+                return formSuccess();
             }
         }
 	    
