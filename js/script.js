@@ -28,7 +28,7 @@ function submitForm(){
         type: "POST",	 
         url: "process.php",
         data: "name=" + name + "&email=" + email + "&msg=" + message,
-        success : function(data){
+        success : function(){
             window.alert(data);
         }
 	    
